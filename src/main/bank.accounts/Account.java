@@ -10,6 +10,8 @@ public abstract class Account {
 //Constructor
     public Account(String accountNumber, String accountHolderName, double balance) {
         this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
     }
 
 
