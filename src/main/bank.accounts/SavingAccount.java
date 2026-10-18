@@ -2,7 +2,8 @@ public class SavingAccount extends Account{
 
 private double interestRate;
 
-//Constructor
+
+//Constructor//
     public SavingAccount(String accountNumber, String accountHolderName, double balance) {
         super(accountNumber, accountHolderName, balance);
         this.interestRate = interestRate;
@@ -10,7 +11,7 @@ private double interestRate;
     }
 
 
-//    Methods
+//Methods//
     @Override
     public void deposit(double amount) {
 if(amount < 0 ){
@@ -34,8 +35,4 @@ System.out.println("Amount deposited: "+getBalance()+"ksh");
         return true;
     }
 
-    @Override
-    public void displayAccountInfo() {
-        super.displayAccountInfo();
-    }
 }

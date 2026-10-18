@@ -7,7 +7,7 @@ public abstract class Account {
     private double balance;
 
 
-//Constructor
+    //Constructor
     public Account(String accountNumber, String accountHolderName, double balance) {
         this.accountNumber = accountNumber;
         this.accountHolderName = accountHolderName;
@@ -15,7 +15,7 @@ public abstract class Account {
     }
 
 
-//    Getters and setters
+    //    Getters and setters
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -41,13 +41,13 @@ public abstract class Account {
     }
 
 
-//    Methods
+    //    Methods
     public abstract void deposit(double amount);
 
     public abstract boolean withdraw(double amount);
 
-    public void displayAccountInfo(){
-        System.out.println("Bank Account no.: "+accountNumber+"\nHolder's Name:"+accountHolderName+"\nCurrent Balance: "+balance);
+    public void displayAccountInfo() {
+        System.out.println("Bank Account no.: " + accountNumber + "\nHolder's Name:" + accountHolderName + "\nCurrent Balance: " + balance);
     }
 
 }
