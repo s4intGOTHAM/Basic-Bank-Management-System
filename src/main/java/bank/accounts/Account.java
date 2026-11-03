@@ -1,4 +1,4 @@
-//This is the abstract class, from which other proceeding accounts possess
+package bank.accounts;//This is the abstract class, from which other proceeding accounts possess
 //similar properties etc
 
 public abstract class Account {
@@ -47,7 +47,7 @@ public abstract class Account {
     public abstract boolean withdraw(double amount);
 
     public void displayAccountInfo() {
-        System.out.println("Bank Account no.: " + accountNumber + "\nHolder's Name:" + accountHolderName + "\nCurrent Balance: " + balance);
+        System.out.println("Bank bank.accounts.Account no.: " + accountNumber + "\nHolder's Name:" + accountHolderName + "\nCurrent Balance: " + balance);
     }
 
 }

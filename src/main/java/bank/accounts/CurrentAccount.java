@@ -1,4 +1,8 @@
-public class CurrentAccount extends Account {
+package bank.accounts;
+
+import bank.transactions.Auditable;
+
+public class CurrentAccount extends Account implements Auditable {
 
     private double overdraftLimit;
 
@@ -39,7 +43,10 @@ public class CurrentAccount extends Account {
         return true;
     }
 
-
+@Override
+    public String generateAuditTrail(){
+     return null;
+}
 }
 
 

@@ -1,4 +1,8 @@
-public class SavingAccount extends Account{
+package bank.accounts;
+
+import bank.transactions.Auditable;
+
+public class SavingAccount extends Account implements Auditable {
 
 private double interestRate;
 
@@ -18,6 +22,7 @@ if(amount < 0 ){
  System.out.println("Fatal error: Enter a valid amount");
  return;
 }
+
 //Logic for adding amount deposited to the balance via setter and getter
 setBalance(getBalance()+amount);
 System.out.println("Transaction successful!");
@@ -35,4 +40,8 @@ System.out.println("Amount deposited: "+getBalance()+"ksh");
         return true;
     }
 
+    @Override
+    public String generateAuditTrail() {
+        return "Savings Account [" + getAccountNumber() + "] - Holder: " + getAccountHolderName() + " - Current Balance: " + getBalance() + "ksh";
+    }
 }
