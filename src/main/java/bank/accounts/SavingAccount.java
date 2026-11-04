@@ -42,6 +42,7 @@ System.out.println("Amount deposited: "+getBalance()+"ksh");
 
     @Override
     public String generateAuditTrail() {
-        return "Savings Account [" + getAccountNumber() + "] - Holder: " + getAccountHolderName() + " - Current Balance: " + getBalance() + "ksh";
+        return ("Savings Account [" + getAccountNumber() + "] - Holder: " + getAccountHolderName() + " - Current Balance: " + getBalance() + "ksh");
+
     }
 }
